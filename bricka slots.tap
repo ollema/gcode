@@ -1,0 +1,23 @@
+(BRICKA SLOTS)
+G90 G94 G91.1 G40 G49 G17
+G21
+G54
+
+G0 X0 Y0
+G0 Z15.
+G1 Z5. F600.
+
+Z-1.; go down 1 mm
+
+X260 F1200; first pass, 4mm wide
+
+Y-2.15
+X0; second pass, 6.15mm wide
+
+Y-4.3
+X260; third pass, 8.3mm wide
+
+
+G0 Z15.
+
+M30
